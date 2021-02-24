@@ -1,0 +1,33 @@
+.header {
+	height: 150px;
+	width: 900px;
+	position: relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+}
+.top_link {
+	position: absolute;
+	top: 5px;
+	font-size: 12px;
+	right: 10px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: right;
+	background-color: rgba(255,255,255,0.6);
+	padding: 5px;
+}
+
+.top_link a:link {
+	text-decoration: none;
+	color: #000000;
+}
+.top_link a:visited {
+	text-decoration: none;
+	color: #000;
+}
+.top_link a:hover {
+	text-decoration: none;
+	color: #0099FF;
+}
