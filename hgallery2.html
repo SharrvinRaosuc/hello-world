@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Southern University College - History Gallery</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css"></style>
+<script type="text/javascript" src="/jquery/jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function(){ 	
+	$.get("/header.html",function(data){
+		$(".header").html(data);
+	});	
+	$.get("hgallery_menu.html",function(data){
+		$(".tab").html(data);
+		$(".tab_menu ul li").eq(1).addClass("selected");
+	});			
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+  <div class="header"></div>
+  <div class="content">
+    <div class="content2">
+      <div class="menu">
+        <iframe src="menu.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+      </div>
+      <div class="right">
+        <div class="title1">History Gallery</div>
+        <div class="tab">Tab Menu</div>
+        <p><img src="images/history_gallery/Slide3.JPG" width="720" height="540" /></p>
+        <p><img src="images/history_gallery/Slide4.JPG" width="720" height="540" /></p>
+        <p><img src="images/history_gallery/Slide5.JPG" width="720" height="540" /></p>
+        <p><img src="images/history_gallery/Slide6.JPG" width="720" height="540" /></p>
+        <p><img src="images/history_gallery/Slide7.JPG" width="720" height="540" /></p>
+        <p><img src="images/history_gallery/Slide8.JPG" width="720" height="540" /></p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <iframe src="/footer.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+  </div>
+</div>
+</body>
+</html>
